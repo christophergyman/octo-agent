@@ -1,0 +1,17 @@
+[server]
+host = "127.0.0.1"
+port = 7531
+db_path = "~/.local/share/octo/octo.db"
+
+[openrouter]
+api_key = ""
+default_model = "deepseek/deepseek-v4.1-flash"
+timeout_secs = 60
+
+[tools]
+mode = "ask"
+workdir_allow = ["~/code"]
+shell_timeout_secs = 30
+
+[tui]
+theme = "dark"

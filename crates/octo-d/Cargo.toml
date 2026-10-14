@@ -1,0 +1,20 @@
+[package]
+name = "octo-d"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "octo-d"
+path = "src/main.rs"
+
+[dependencies]
+octo-core = { path = "../octo-core" }
+tokio = { version = "1.47", features = ["full"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json", "env-filter"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+glob = "0.3"
+reqwest = { version = "0.12", features = ["json", "stream", "rustls-tls"] }
+futures-util = "0.3"

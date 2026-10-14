@@ -1,0 +1,17 @@
+# Rust build output. Never commit, rebuilds from Cargo.toml plus Cargo.lock.
+target/
+# Local agent runtime: tool overflow files, per repo state.
+.octo/
+*.db
+*.db-wal
+*.db-shm
+# Daemon and TUI logs.
+*.log
+# Never commit real keys. Example config stays with empty key.
+# (User key lives in ~/.config/octo/config.toml, outside this repo.)
+# OS and editor noise.
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
